@@ -1,0 +1,12 @@
+<main class="main">
+    <div class="cards">
+        <div class="card" *ngFor="let proyecto of listaProyectos">
+            <div class="card__img">
+                <img [src]="proyecto.imagen" [alt]="proyecto.nombre">
+            </div>
+            <div class="card__text">
+                {{proyecto.nombre}}
+            </div>
+        </div>
+    </div>
+</main>
